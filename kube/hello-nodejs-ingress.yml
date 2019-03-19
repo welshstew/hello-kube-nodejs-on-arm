@@ -3,9 +3,8 @@ kind: Ingress
 metadata:
   labels:
     app: hello-nodejs
-  annotations:
-    name: hello-nodejs
-    namespace: default
+  name: hello-nodejs
+  namespace: default
 spec:
   rules:
   - host: hello-nodejs.rak8s001
