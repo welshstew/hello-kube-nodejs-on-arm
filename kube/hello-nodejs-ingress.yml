@@ -1,0 +1,17 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  labels:
+    app: hello-nodejs
+  annotations:
+    name: hello-nodejs
+    namespace: default
+spec:
+  rules:
+  - host: hello-nodejs.rak8s001
+    http:
+      paths:
+      - backend:
+          serviceName: hello-nodejs
+          servicePort: http
+        path: /
