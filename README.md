@@ -37,6 +37,6 @@ docker build . -t welshstew/hello-kube-nodejs-on-arm:1.0
 ## Run
 
 ```text
-kubectl create deployment hello-node --image=welshstew/hello-kube-nodejs-on-arm:1.0
+kubectl create deployment hello-nodejs --image=welshstew/hello-kube-nodejs-on-arm:1.0
 ```
 
